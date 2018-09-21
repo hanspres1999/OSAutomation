@@ -1,0 +1,21 @@
+Dictionary: {Key=time , value = event()}
+
+event: (1,)
+
+1: What?
+Event types:
+		Mouse click press:
+			x, y
+				(mp,x,y)
+		Mouse click release
+			x,y
+				(mr,x,y)
+		Mouse scroll
+			x,y, dy
+				(ms, x,y,dy)
+		Keyboard press
+			any key
+				(kp,"<KEY>")
+		keyboard release.
+			any key
+				(kr,"<KEY>")  
