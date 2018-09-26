@@ -84,7 +84,10 @@ def on_click(x, y, button, pressed): #for mouse clicks: When and where was the m
 
 	#storing to the keyLog:
 	key = tempTime - t
-	value = ["mp", x, y]
+	if pressed:
+		value = ["mp", x, y]
+	else:
+		value = ["mr", x, y]
 	key = round(key, 4)
 	logDict.update({key : value})
 
